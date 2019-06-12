@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#327a91"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#327a91"
+            android:text="Hari Ini"
+            android:textSize="15dp"
+            android:paddingRight="70dp"
+            android:paddingLeft="60dp"
+            android:textColor="@color/text"
+            android:id="@+id/button"
+            >
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#27a1c7"
+            android:text="Besok"
+            android:textSize="15dp"
+            android:textColor="@color/text"
+            android:layout_marginLeft="187dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/button1"
+            >
+        </Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/city_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/selectCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updated_field"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-50dp"
+            android:text="Choose City"
+            android:textColor="@color/colorAccent"
+            android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/updated_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_field"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="7dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="13sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/current_temperature_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pressure_field"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="90sp" />
+
+        <TextView
+            android:id="@+id/details_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/humidity_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_field"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-57dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/pressure_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_field"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:text=""
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
