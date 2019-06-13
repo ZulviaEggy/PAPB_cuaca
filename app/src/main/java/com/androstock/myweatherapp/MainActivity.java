@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar loader;
     Typeface weatherFont;
     String city = "Yogyakarta";
-    String OPEN_WEATHER_MAP_API = "cbfdb21fa1793c10b14b6b6d00fbef03";
-
+    String OPEN_WEATHER_MAP_API = "4c003e583c50abac0846870777a50592";
 
 
     @Override

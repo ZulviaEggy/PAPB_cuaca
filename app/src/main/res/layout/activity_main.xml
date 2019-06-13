@@ -12,7 +12,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#327a91"
+            android:background="#52aac6"
             android:text="Hari Ini"
             android:textSize="15dp"
             android:paddingRight="70dp"
@@ -61,8 +61,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:paddingTop="100dp">
+        android:layout_marginTop="190dp"
+        android:paddingTop="96dp">
 
         <TextView
             android:id="@+id/current_temperature_field"
@@ -95,8 +95,7 @@
             android:layout_below="@+id/weather_icon"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="9dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="6dp"
             android:layout_marginRight="10dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF" />
@@ -106,8 +105,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/details_field"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="-60dp"
+            android:layout_marginTop="-80dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF" />
 
@@ -116,8 +117,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/humidity_field"
-            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFFFFF" />
         <TextView
@@ -136,6 +138,8 @@
         android:id="@+id/loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="165dp"
+        />
 
 </RelativeLayout>
